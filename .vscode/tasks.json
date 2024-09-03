@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Typecript compile all .ts files",
+            "type": "shell",
+            "command": "tsc -w ${workspaceFolder}/*.ts",
+            "isBackground": true
+        },
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": "build",
+            "label": "tsc: build - tsconfig.json"
+        },
+        {
+            "type": "npm",
+            "script": "debug",
+            "problemMatcher": [],
+            "label": "npm: debug",
+            "detail": "npm run debug"
+        }
+    ]
+}
