@@ -1,0 +1,1 @@
+const Molecule = import("../public/molecule");

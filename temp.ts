@@ -37,4 +37,4 @@ function isCorrect(s: string): false | Array<string |  [number, ...string[]]>{
     return false;
   return found
 }
-console.log(isCorrect("CU(OH)-"))
+console.log(isCorrect("CUOH"))

@@ -45,4 +45,4 @@ function isCorrect(s) {
         return false;
     return found;
 }
-console.log(isCorrect("CU(OH)-"));
+console.log(isCorrect("CUOH"));
